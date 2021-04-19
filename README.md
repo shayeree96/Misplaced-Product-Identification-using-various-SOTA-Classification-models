@@ -69,6 +69,12 @@ Now in testing further :
 
 Details about various classification model experiments and hyperparameter tunings are mentioned in the presentation module.
 
+## Results
+
+The green bounding boxes represent correct product location whereas the red bounding boxes denote the plug ( misplaced product ) 
+![image](https://user-images.githubusercontent.com/54212099/115300557-19e5f300-a12e-11eb-813f-5d282d0de248.png)
+
+
 ## Acknowledgements
 Our project is based on the following two github repositories:
 
