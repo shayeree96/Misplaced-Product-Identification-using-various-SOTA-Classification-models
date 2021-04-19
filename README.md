@@ -38,13 +38,14 @@ Since the dataset is large, manual cleaning and annotation would take several ma
 
 ![image](https://user-images.githubusercontent.com/54212099/115293005-c622dc00-a124-11eb-9f9f-120b8112bb25.png)
 
+
 ## Data Collection by UPC Mapping :
 
 Training a model on product category ( UPC – unique no associated to product type from the company its been manufactured by ) helps to deal with the problem of modeling all variations per category.
 ![image](https://user-images.githubusercontent.com/54212099/115287083-d97e7900-a11d-11eb-9117-23a3dd57cf8c.png)
 
 ## End to End Architecture 
-- Given a Panogram image collected by a robot, after scanninng an aisle, we generate the crops for the all the products using Retinanet model with the Resnet50 Backbone and FPN as the neck 
+- Given a Panogram image collected by a robot, after scanninng an aisle, we generate the crops for the all the products using Retinanet model with the Resnet50 Backbone and FPN as the neck
 ![image](https://user-images.githubusercontent.com/54212099/115289790-f9636c00-a120-11eb-8993-7b5c4c934174.png)
 
 - The individual crops are collected for a particular UPC and trained. We find from several different asrchitectures that the B4-Efficient Model works best for our dataset. We train our model on eight NVIDIA's Titan RTX GPUs This training phase includes  :
@@ -66,18 +67,10 @@ Now in testing further :
 
 Details about various classification model experiments and hyperparameter tunings are mentioned in the presentation module.
 
-## Reference
-[1] Tian, Z., Shen, C., Chen, H., and He, T., “FCOS: Fully Convolutional One-Stage Object
-Detection”, <i>arXiv e-prints</i>, 2019.
-
-[2] Q. Zhao, T. Sheng, Y. Wang, Z. Tang, Y. Chen, L. Cai, and H. Ling. M2det: A single-shot object
-detector based on multi-level feature pyramid network. AAAI, 2019.
 ## Acknowledgements
 Our project is based on the following two github repositories:
 
-https://github.com/zhenghao977/FCOS-PyTorch-37.2AP
-
-https://github.com/qijiezhao/M2Det
+https://github.com/open-mmlab/mmdetection
 
 We would like to thank the contributors for providing us code resources
 
