@@ -2,7 +2,9 @@
 
 This project integrates an anchor-free object detector (FCOS) with a multi-level feature pyramid network, which contains richer semantic features for object detection.
 
-## Background
+## Presentation
+
+The link for the associated presentation : https://drive.google.com/file/d/19fi0k6Dwx8tpdeokwhi4Yc39bcXCjZet/view
 
 ## Product Recognition is a Challenging Problem :
 - Very similar products, yet entirely different
